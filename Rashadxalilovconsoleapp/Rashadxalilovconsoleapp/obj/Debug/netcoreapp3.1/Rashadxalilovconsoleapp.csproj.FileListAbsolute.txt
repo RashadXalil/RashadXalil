@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\bin\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.exe
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\bin\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.deps.json
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\bin\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.runtimeconfig.json
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\bin\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.runtimeconfig.dev.json
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\bin\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.dll
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\bin\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.pdb
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.AssemblyInfo.cs
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.dll
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.pdb
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.genruntimeconfig.cache
+C:\Users\User\source\repos\Rashadxalilovconsoleapp\Rashadxalilovconsoleapp\obj\Debug\netcoreapp3.1\Rashadxalilovconsoleapp.csproj.AssemblyReference.cache
