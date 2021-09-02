@@ -317,7 +317,7 @@ namespace Rashadxalilovconsoleapp
         tryagain:
             Console.WriteLine("Maas : ");
             int salary = Convert.ToInt32(Console.ReadLine());
-            if (salary < 250)
+            if (salary <= 250)
             {
                 Console.WriteLine("Maas minimum 250 AZN olmalidir.");
                 goto tryagain;
@@ -337,28 +337,7 @@ namespace Rashadxalilovconsoleapp
         static void EditEmployee(ref HumanManagerService programcs)
         {
 
-            //Console.WriteLine("Deyisiklik etmek istediyiniz Iscinin Adini daxil edin :");
-            //string oldname = Console.ReadLine();
-            //Console.WriteLine("Yeni ad:");
-
-            //string newname = Console.ReadLine();
-            //foreach (var item in programcs.Departments)
-            //{
-            //    foreach (var item1 in item.Employees)
-            //    {
-
-
-            //        if (item1.FullName == oldname)
-            //        {
-            //            Console.WriteLine("Deyisiklik yerine yetirildi !");
-            //            item1.FullName = newname;
-
-            //        }
-
-
-
-            //    }
-            //}
+            
 
             Console.WriteLine("Iscinin Nosunu daxil edin : ");
 
@@ -378,18 +357,7 @@ namespace Rashadxalilovconsoleapp
                         {
                             Console.WriteLine($"{i + 1} - {positiontype[i]}");
                         }
-                        //string typestr;
-                        //int typeint;
-                        //do
-                        //{
-                        //    Console.Write("Deyisdirmek istediyiniz positionu secin:");
-                        //    typestr = Console.ReadLine();
-
-
-                        //}
-
-                        //while (!int.TryParse(typestr, out typeint));
-                        //Enums enums = (Enums)typeint;
+                        
                         string typestr;
                         int typeint;
                         Console.WriteLine("Position:");

@@ -76,17 +76,13 @@ namespace Rashadxalilovconsoleapp.Service
             //department axtarmaq
             foreach (Department item in _departments)
             {
-                if (item.Name.ToLower() != depname.ToLower())
-                {
-                    Console.WriteLine("Bele bir Department yoxdur  !");
-                    break;
-                  
-                }
-                else
+                if (item.Name.ToLower() == depname.ToLower())
                 {
                     department = item;
                     break;
+
                 }
+                
             }           
             Employee employee = null; 
 
@@ -95,34 +91,34 @@ namespace Rashadxalilovconsoleapp.Service
                 foreach (Employee item in department.Employees)
                 {
                                        
-                    if (item.FullName.ToUpper() != workername.ToUpper())
+                    if (item.FullName.ToUpper() == workername.ToUpper())
                     {
-                        Console.WriteLine("Daxil etdiyiniz Departmentde bu adda isci yoxdur !");
+                        employee = item;
                         break;
-                        
                     }
-                    else
-                    {
-                        if (workerno != item.No)
-                        {
-                            Console.WriteLine("Daxil etdiyiniz iscinin No-su duzgun deyil !");
-                            break;
-                           
-                        }
-                        else
-                        {
-                            employee = item;
-                            break;
-                        }
-                    }
-
                 }
             }
+            else
+            {
+                Console.WriteLine("Daxil etdiyiniz adda Department yoxdur !");
+            }
+
             if (employee!=null)
             {
-                int index = Array.IndexOf(department.Employees, employee);
-                Array.Clear(department.Employees, index, 1);
-                Console.WriteLine("Isci ugurla silindi!");
+                foreach (var item in department.Employees)
+                {
+                    if (item.No.ToUpper() == workerno.ToUpper())
+                    {
+                        int index = Array.IndexOf(department.Employees, employee);
+                        Array.Clear(department.Employees, index, 1);
+                        Console.WriteLine("Isci ugurla silindi!");
+                    }
+                }
+               
+            }
+            else
+            {
+                Console.WriteLine("Departmentde daxil etdiyiniz adda Isci yoxdur !");
             }
         }
         //Isci yaratmaq ucun method
