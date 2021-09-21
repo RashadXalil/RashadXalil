@@ -5,6 +5,7 @@ namespace Rashadxalilovconsoleapp
 {
     class Program
     {
+        private static int salary;
         static void Main(string[] args)
         {
             HumanManagerService programcs = new HumanManagerService();
@@ -95,36 +96,26 @@ namespace Rashadxalilovconsoleapp
                
                 case 5:
                     programcs.ListDepartment();
-                    Console.Write("Departmenti daxil edin: ");
+                    Console.Write("Enter Department Name: ");
                     string dprtname = Console.ReadLine();
-                    
+
                     foreach (var item in programcs.ListDepartment())
                     {
-                        if (item.Name == dprtname)
+                        if (item.Name.ToUpper() == dprtname.ToUpper())
                         {
 
-
-                            for (int i = 0; i < item.Employees.Length; i++)
+                            foreach (var item1 in item.Employees)
                             {
-                                foreach (var item1 in item.Employees)
+
+                                if (item1 != null)
                                 {
-                                    if (item1.FullName != null)
-                                    {
-                                        Console.WriteLine($"Ad: {item1.FullName} \nNo: {item1.No} \nDepartment: {item1.DepartmentName} \nPosition: {item1.Position} \n Salary: {item1.Salary}");
-                                        break;
-                                    }
-                                    else
-                                    {
-                                        i++;
-                                    }
+                                    Console.WriteLine($"Full Name: {item1.FullName} \nNo: {item1.No} \nDepartment: {item1.DepartmentName} \nPosition: {item1.Position} \nSalary: {item1.Salary}");
+                                    Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
                                 }
-
-
                             }
                         }
-                    }
-                    
 
+                    }
                     Console.Write("Davam etmek isteyirsiniz ? y/n : ");
                     string choise7 = Console.ReadLine();
                     if (choise7 == "y")
@@ -232,57 +223,35 @@ namespace Rashadxalilovconsoleapp
         static void EditDepartment(ref HumanManagerService programcs)
         {
         tryagain1:
-            Console.Write("Deyisiklik etmek istediyiniz Departmenti daxil edin :");
+            Console.Write("Deyisiklik etmek Departmenitn adini daxil edin :");
             string oldname = Console.ReadLine();
-           
+            Console.Write("Departmenin adini daxil edin :");
+            string newname = Console.ReadLine();
+
             foreach (var item in programcs.Departments)
             {
                 if (oldname == item.Name)
                 {
-                    Console.WriteLine("Deyisiklik etmek istediyiniz Department tapildi !");
-                  
-                    Console.Write("Departmentin yeni adini daxil edin:");
-                    string newname = Console.ReadLine();
-                    foreach (var item1 in programcs.Departments)
+                    Console.WriteLine("Department Tapildi!");
+                    programcs.EditDepartment(oldname, newname);
+                    foreach (var item2 in item.Employees)
                     {
-                        if (newname==item1.Name)
-                        {
-                            Console.WriteLine("Daxil etdiyiniz adda Department movcuddur");
-                            
-                            goto tryagain1;
-                        }
-                        
+                        item2.No = item2.No.Replace(item2.No.Substring(0, 2), newname.ToUpper().Substring(0, 2));
+                        item2.DepartmentName = newname;
                     }
-                    if(item.Name == newname)
-                    {
-                        Console.WriteLine("Daxil etdiyiniz yeni ad movcud Department adi ile eynidir.");
-                        goto tryagain1;
-                    }
-                    else
-                    {
-                        programcs.EditDepartment(oldname, newname);
-                        foreach (var item1 in programcs.Departments)
-                        {
-                            foreach (var item2 in item1.Employees)
-                            {
-                                item2.No = item2.No.Replace(item2.No.Substring(0, 2), newname.ToUpper().Substring(0, 2));
-                                item2.DepartmentName = newname;
-                            }
-                        }
-                        Console.WriteLine("Emeliyyat ugurla yerine yetirildi !");
-                        break;
-
-                    }
-                    
                 }
-                else
+                else if (newname == oldname)
                 {
-                    Console.WriteLine("Daxil etdiyiniz adda Department yoxdur! ");
+                    Console.WriteLine("Daxil etdiyiniz adda department movcud deyil !");
+
                     goto tryagain1;
                 }
-              
+                else if (newname == item.Name)
+                {
+                    Console.WriteLine("Daxil etdiyiniz yeni ad Departmentin movcud adi ile eynidir !");
+                    goto tryagain1;
+                }
             }
-
 
         }
         //isci yaratmaq ucun method
@@ -336,20 +305,16 @@ namespace Rashadxalilovconsoleapp
         //Isci uzerinde deyisiklik etmek ucun method
         static void EditEmployee(ref HumanManagerService programcs)
         {
-
-            
-
-            Console.WriteLine("Iscinin Nosunu daxil edin : ");
-
+            Console.WriteLine("Iscinin No-sunu daxil edin : ");
             string no = Console.ReadLine();
             foreach (var item in programcs.Departments)
             {
                 foreach (var item1 in item.Employees)
                 {
-                    if (no == item1.No)
+                    if (no.ToUpper() == item1.No.ToUpper())
                     {
-                        Console.WriteLine("Deyisiklik etmek istediyiniz isci tapildi !");
-                        Console.WriteLine($"Ad Soyad: {item1.FullName} \nPosition: {item1.Position} \nSalary: {item1.Salary} \n*************************************************");
+                        Console.WriteLine("Isci tapildi!");
+                        Console.WriteLine($"Full Name: {item1.FullName} \nPosition: {item1.Position} \nSalary: {item1.Salary} \n* * * * * * * * * * * * * * * * * * *");
 
                         // Positions
                         string[] positiontype = Enum.GetNames(typeof(Enums));
@@ -357,36 +322,45 @@ namespace Rashadxalilovconsoleapp
                         {
                             Console.WriteLine($"{i + 1} - {positiontype[i]}");
                         }
-                        
+
                         string typestr;
                         int typeint;
-                        Console.WriteLine("Position:");
+                        Console.Write("Position:");
                         typestr = Console.ReadLine();
                         while (!int.TryParse(typestr, out typeint) || typeint < 1 || typeint > positiontype.Length)
                         {
-                            Console.WriteLine("Yeniden cehd et: ");
+                            Console.WriteLine("Tekrar cehd edin: ");
                             typestr = Console.ReadLine();
 
                         }
                         Enums enums = (Enums)typeint;
                         item1.Position = enums;
-                        Console.WriteLine("Done!");
+                        Console.WriteLine("Position Changed!");
 
-                        Console.WriteLine("Yeni maas daxil et:");
+                        Console.Write("Enter new Salary:");
                         double newsalary = int.Parse(Console.ReadLine());
-                        item1.Salary = newsalary;
-                        
+                        foreach (var item3 in programcs.Departments)
+                        {
+                            foreach (var item4 in item.Employees)
+                            {
+                                if (salary >= 250 && salary < item.SalaryLimit)
+                                {
+                                    item1.Salary = newsalary;
+                                    break;
+
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Salary is out of Range!");
+                                    return;
+                                }
+
+                            }
+                        }
                         return;
                     }
                 }
             }
-
-           
-            
-
-
-
-
         }
         // iscilerin siyahisini cixardan method
         static void ShowEmployees(ref HumanManagerService programcs)

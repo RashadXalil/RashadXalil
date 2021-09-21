@@ -72,8 +72,7 @@ namespace Rashadxalilovconsoleapp.Service
         //Movcud iscini silmek ucun method
         public void RemoveEmployee(string depname,string workerno,string workername)
         {
-            Department department = null; // icinde axtaris etdiyimiz department
-            //department axtarmaq
+            Department department = null;
             foreach (Department item in _departments)
             {
                 if (item.Name.ToLower() == depname.ToLower())
@@ -82,15 +81,15 @@ namespace Rashadxalilovconsoleapp.Service
                     break;
 
                 }
-                
-            }           
-            Employee employee = null; 
+
+            }
+            Employee employee = null;
 
             if (department != null)
             {
                 foreach (Employee item in department.Employees)
                 {
-                                       
+
                     if (item.FullName.ToUpper() == workername.ToUpper())
                     {
                         employee = item;
@@ -100,10 +99,9 @@ namespace Rashadxalilovconsoleapp.Service
             }
             else
             {
-                Console.WriteLine("Daxil etdiyiniz adda Department yoxdur !");
+                Console.WriteLine("Department Movcud deyil!");
             }
-
-            if (employee!=null)
+            if (employee != null)
             {
                 foreach (var item in department.Employees)
                 {
@@ -112,13 +110,29 @@ namespace Rashadxalilovconsoleapp.Service
                         int index = Array.IndexOf(department.Employees, employee);
                         Array.Clear(department.Employees, index, 1);
                         Console.WriteLine("Isci ugurla silindi!");
+                        for (int i = 0; i < department.Employees.Length; i++)
+                        {
+                            if (department.Employees[i] != null)
+                            {
+                                continue;
+                            }
+                            for (int j = 0; j < department.Employees.Length; j++)
+                            {
+                                if (department.Employees[i] == null)
+                                {
+                                    continue;
+                                    department.Employees[i] = department.Employees[j];
+                                    department.Employees[j] = null;
+                                    break;
+                                }
+                            }
+                        }
                     }
                 }
-               
             }
             else
             {
-                Console.WriteLine("Departmentde daxil etdiyiniz adda Isci yoxdur !");
+                Console.WriteLine("Daxil etdiyiniz departmentde bele isci yoxdur !");
             }
         }
         //Isci yaratmaq ucun method
