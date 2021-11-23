@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Turbo.az</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-8" id="tel">
+              <p>Dəstək xidməti: (012) 599-08-01; (012) 505-77-55</p>
+            </div>
+            <div class="col-4">
+              <button class="navbar-1-btn" id="changelanguage">Giriş</button>
+              <button class="navbar-1-btn" id="favorites">Seçilmişlər</button>
+              <button class="navbar-1-btn" id="register">по-русски</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" id="turbo-az">
+              <h1>TURBO.AZ</h1>
+            </div>
+            <div class="col-3" id="bina-az">
+              <h1>BINA.AZ</h1>
+            </div>
+            <div class="col-3" id="tap-az">
+              <h1>TAP.AZ</h1>
+            </div>
+            <div class="col-3" id="boss-az">
+              <h1>BOSS.AZ</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <ul>
+                <li>Bütün elanlar</li>
+                <li>Avtosalonlar</li>
+                <li>Mağazalar və şirkətlər</li>
+                <li>Ehtiyat hissələri və aksesuarlar</li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <div class="addsale">
+                <h4><i class="fas fa-plus-circle"></i>Elan Yerləşdir</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="sec1">
+        <div class="container">
+          <div class="row">
+            <h5>ELAN YERLƏŞDİRMƏK</h5>
+          </div>
+        </div>
+      </section>
+      <section id="sec2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h5 id="h5">Elan</h5>
+            </div>
+            <div class="col-12">
+              <ul>
+                <li>
+                  Üç ay ərzində bir nəqliyyat vasitəsi yalnız bir dəfə pulsuz
+                  dərc oluna bilər.
+                </li>
+                <li>
+                  Üç ay ərzində təkrar və ya oxşar elanlar (marka/model, rəng)
+                  ödənişlidir.
+                </li>
+                <li>
+                  Elanınızı saytın ön sıralarında görmək üçün "İrəli çək"
+                  xidmətindən istifadə edin.
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <label for="marka" class="sec2-label" id="marka"
+                >Marka
+                <p id="star">*</p></label
+              >
+              <label for="model" class="sec2-label" id="model"
+                >Model
+                <p id="star">*</p></label
+              >
+              <label for="ban" class="sec2-label" id="ban"
+                >Ban Növü
+                <p id="star">*</p></label
+              >
+              <label for="yurus" class="sec2-label" id="yurus"
+                >Yürüş
+                <p id="star">*</p></label
+              >
+              <label for="color" class="sec2-label" id="color"
+                >Rəng
+                <p id="star">*</p></label
+              >
+              <label for="price" class="sec2-label" id="price"
+                >Qiymət
+                <p id="star">*</p></label
+              >
+            </div>
+            <div class="col-4">
+              <select name="marka" id="sec2-input-marka" class="sec2-input">
+                <option value="1">Seçin</option>
+              </select>
+              <select name="marka" id="sec2-input-model" class="sec2-input">
+                <option value="1">Seçin</option>
+              </select>
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1">Seçin</option>
+              </select>
+              <input type="text" id="sec2-input-yurus" class="sec2-input" />
+              <input type="radio" class="sec2-radio" /> Km
+              <input type="radio" class="sec2-radio" /> Mi
+              <select name="marka" id="sec2-input-color" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <select name="marka" id="sec2-input-price" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <input type="radio" class="sec2-radio" /> USD
+              <input type="radio" class="sec2-radio" /> AZN <br />
+              <input type="checkbox" class="sec2-ckeckbox" /> Kreditdədir <br />
+              <input type="checkbox" class="sec2-ckeckbox" /> Barter Mümkündür
+            </div>
+            <div class="col-2">
+              <label for="yanacaqnovu" class="sec2-label" id="yanacaqnovu"
+                >Yanacaq Növü
+                <p id="star">*</p></label
+              >
+              <label for="oturucu" class="sec2-label" id="oturucu"
+                >Ötürücü
+                <p id="star">*</p></label
+              >
+              <label for="suretlerqutusu" class="sec2-label" id="suretlerqutusu"
+                >Sürətlər Qutusu
+                <p id="star">*</p></label
+              >
+              <label for="year" class="sec2-label" id="year"
+                >Buraxılış ili
+                <p id="star">*</p></label
+              >
+              <label for="marka" class="sec2-label" id="marka"
+                >Mühərrik həcmi ,sm<sup>3</sup>
+                <p id="star">*</p></label
+              >
+              <label for="marka" class="sec2-label" id="marka"
+                >Mühərrikin Gücü ,a.g
+                <p id="star">*</p></label
+              >
+            </div>
+            <div class="col-4">
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1"></option>
+              </select>
+              <select name="marka" id="sec2-input-ban" class="sec2-input">
+                <option value="1"></option>
+              </select>
+            </div>
+            <div class="col-2">
+              <label for="about" class="sec2-label" id="about-label">
+                Əlavə Məlumat
+              </label>
+            </div>
+            <div class="col-10" id="about">
+                <input type="text" class="sec2-input" id="about-input">
+                <p class="about-placeholder">telefon nömrələri qeyd etmək qadağandır</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/684f69f495.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar-1 {
+    width: 100%;
+    background-color: #333;
+    position: relative;
+}
+
+#tel p {
+    padding: 15px;
+    float: right;
+    color: #c4c4c4;
+}
+
+.navbar-1-btn {
+    background-color: #333;
+    color: lightgray;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    float: right;
+    transition: 0.2s;
+}
+
+.navbar-1-btn:hover {
+    color: white;
+}
+
+#turbo-az {
+    /* position: absolute; */
+    padding: 15px;
+    text-align: center;
+    background-color: #ca1016;
+    color: white;
+    border: 1px solid gray;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+#bina-az {
+    float: right;
+    padding: 15px;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-bottom: none;
+    border-left: none;
+    transition: background-color 0.2s linear;
+}
+
+#tap-az {
+    padding: 15px;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-bottom: none;
+    transition: background-color 0.2s linear;
+}
+
+#boss-az {
+    padding: 15px;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-bottom: none;
+    transition: background-color 0.2s linear;
+}
+
+.navbar-2 {
+    width: 100%;
+    background-color: #ca1016;
+    height: 54px;
+}
+
+#bina-az:hover {
+    background-color: #b88668;
+    border: none;
+}
+
+#tap-az:hover {
+    border: none;
+    background-color: #ff6617;
+}
+
+#boss-az:hover {
+    background-color: #f6a72a;
+    border: none;
+}
+
+.navbar-2 ul li {
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 15px;
+    color: white;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+}
+
+.navbar-2 ul li:hover {
+    background-color: #fd1d24;
+}
+
+.addsale {
+    width: 215px;
+    height: 54px;
+    background-color: #7ed321;
+    /* float: right; */
+    margin-left: 150px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.addsale h4 {
+    color: white;
+    padding: 12px;
+}
+
+.addsale h4 i {
+    padding-right: 20px;
+}
+
+.addsale:hover {
+    background-color: #5e9e19;
+}
+#sec1 h5{
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+#sec1{
+    border-bottom: 1px solid lightgray;
+}
+#sec2 ul li{
+    font-size: 16px;
+    padding: 5px;
+}
+#h5{
+    padding-top: 10px;
+}
+#star{
+    color: red;
+    display: inline-block;
+}
+.sec2-label{
+    display:block;
+}
+.sec2-input {
+    width: 100%;
+    padding: 2px;
+    border-color: lightgray;
+    margin-bottom: 20px;
+}
+#sec2-input-price{
+    width: 50%;
+}
+.sec2-radio{
+    margin-left: 20px;
+}
+#sec2-input-yurus
+{
+    border: 1px solid lightgray;
+    width: 50%;
+}
+#about-label{
+    margin-top: 20px;
+}
+#about-input{
+    margin-top: 20px;
+    height: 150px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.about-placeholder{
+    color: gray;
+}
