@@ -1,188 +1,372 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 .navbar-1 {
-    width: 100%;
-    background-color: #333;
-    position: relative;
+  width: 100%;
+  background-color: #333;
+  position: relative;
 }
 
 #tel p {
-    padding: 15px;
-    float: right;
-    color: #c4c4c4;
+  padding: 15px;
+  float: right;
+  color: #c4c4c4;
 }
 
 .navbar-1-btn {
-    background-color: #333;
-    color: lightgray;
-    border: none;
-    padding: 15px;
-    font-size: 16px;
-    float: right;
-    transition: 0.2s;
+  background-color: #333;
+  color: lightgray;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  float: right;
+  transition: 0.2s;
 }
 
 .navbar-1-btn:hover {
-    color: white;
+  color: white;
 }
 
 #turbo-az {
-    /* position: absolute; */
-    padding: 15px;
-    text-align: center;
-    background-color: #ca1016;
-    color: white;
-    border: 1px solid gray;
-    border-right: none;
-    border-bottom: none;
-    cursor: pointer;
+  /* position: absolute; */
+  padding: 15px;
+  text-align: center;
+  background-color: #ca1016;
+  color: white;
+  border: 1px solid gray;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
 }
 
 #bina-az {
-    float: right;
-    padding: 15px;
-    text-align: center;
-    background-color: #424242;
-    color: white;
-    border: 1px solid gray;
-    cursor: pointer;
-    border-bottom: none;
-    border-left: none;
-    transition: background-color 0.2s linear;
+  float: right;
+  padding: 15px;
+  text-align: center;
+  background-color: #424242;
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-bottom: none;
+  border-left: none;
+  transition: background-color 0.2s linear;
 }
 
 #tap-az {
-    padding: 15px;
-    text-align: center;
-    background-color: #424242;
-    color: white;
-    border: 1px solid gray;
-    cursor: pointer;
-    border-bottom: none;
-    transition: background-color 0.2s linear;
+  padding: 15px;
+  text-align: center;
+  background-color: #424242;
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-bottom: none;
+  transition: background-color 0.2s linear;
 }
 
 #boss-az {
-    padding: 15px;
-    text-align: center;
-    background-color: #424242;
-    color: white;
-    border: 1px solid gray;
-    cursor: pointer;
-    border-bottom: none;
-    transition: background-color 0.2s linear;
+  padding: 15px;
+  text-align: center;
+  background-color: #424242;
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-bottom: none;
+  transition: background-color 0.2s linear;
 }
 
 .navbar-2 {
-    width: 100%;
-    background-color: #ca1016;
-    height: 54px;
+  width: 100%;
+  background-color: #ca1016;
+  height: 54px;
 }
 
 #bina-az:hover {
-    background-color: #b88668;
-    border: none;
+  background-color: #b88668;
+  border: none;
 }
 
 #tap-az:hover {
-    border: none;
-    background-color: #ff6617;
+  border: none;
+  background-color: #ff6617;
 }
 
 #boss-az:hover {
-    background-color: #f6a72a;
-    border: none;
+  background-color: #f6a72a;
+  border: none;
 }
 
 .navbar-2 ul li {
-    float: left;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 15px;
-    color: white;
-    transition: background-color 0.2s linear;
-    cursor: pointer;
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 15px;
+  color: white;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
 }
 
 .navbar-2 ul li:hover {
-    background-color: #fd1d24;
+  background-color: #fd1d24;
 }
 
 .addsale {
-    width: 215px;
-    height: 54px;
-    background-color: #7ed321;
-    /* float: right; */
-    margin-left: 150px;
-    cursor: pointer;
-    transition: 0.2s;
+  width: 215px;
+  height: 54px;
+  background-color: #7ed321;
+  /* float: right; */
+  margin-left: 150px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .addsale h4 {
-    color: white;
-    padding: 12px;
+  color: white;
+  padding: 12px;
 }
 
 .addsale h4 i {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .addsale:hover {
-    background-color: #5e9e19;
+  background-color: #5e9e19;
 }
-#sec1 h5{
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+#sec1 h5 {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
-#sec1{
-    border-bottom: 1px solid lightgray;
+#sec1 {
+  border-bottom: 1px solid lightgray;
 }
-#sec2 ul li{
-    font-size: 16px;
-    padding: 5px;
+#sec2 ul li {
+  font-size: 16px;
+  padding: 5px;
 }
-#h5{
-    padding-top: 10px;
+#h5 {
+  padding-top: 10px;
 }
-#star{
-    color: red;
-    display: inline-block;
+#star {
+  color: red;
+  display: inline-block;
 }
-.sec2-label{
-    display:block;
+.sec2-label {
+  display: block;
 }
 .sec2-input {
-    width: 100%;
-    padding: 2px;
-    border-color: lightgray;
-    margin-bottom: 20px;
+  width: 100%;
+  padding: 2px;
+  border-color: lightgray;
+  margin-bottom: 20px;
 }
-#sec2-input-price{
-    width: 50%;
+#sec2-input-price {
+  width: 50%;
 }
-.sec2-radio{
-    margin-left: 20px;
+.sec2-radio {
+  margin-left: 20px;
 }
-#sec2-input-yurus
-{
-    border: 1px solid lightgray;
-    width: 50%;
+#sec2-input-yurus {
+  border: 1px solid lightgray;
+  width: 50%;
 }
-#about-label{
-    margin-top: 20px;
+#about-label {
+  margin-top: 20px;
 }
-#about-input{
-    margin-top: 20px;
-    height: 150px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    margin-bottom: 5px;
+#about-input {
+  margin-top: 20px;
+  height: 150px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
-.about-placeholder{
-    color: gray;
+.about-placeholder {
+  color: gray;
+}
+#sec2-input-price {
+  width: 50%;
+  border: 1px solid lightgray;
+}
+#sec3-header {
+  padding: 15px;
+}
+#sec4 h5 {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#pictures {
+  width: 100%;
+  height: 200px;
+  border: 1px dotted rgb(7, 7, 160);
+  flex-wrap: wrap;
+}
+#pictures p {
+  padding: 5px;
+  color: gray;
+}
+#pictures-p-first {
+  margin-top: 20px;
+}
+#front-car {
+  margin-top: 25px;
+  width: 100vw;
+  height: 150px;
+  background-color: rgb(155, 127, 182);
+  border: 1px solid blue;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#front-car i {
+  font-size: 100px;
+  padding: 25px;
+}
+#add-car i {
+  font-size: 100px;
+  padding: 25px;
+}
+#back-car i {
+  margin-top: 10px;
+  font-size: 100px;
+  padding: 15px;
+}
+#back-car {
+  margin-top: 25px;
+  width: 100px;
+  height: 150px;
+  background-color: rgb(155, 127, 182);
+  border: 1px solid blue;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#add-car {
+  margin-top: 25px;
+  width: 100px;
+  height: 150px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid blue;
+  background-color: rgb(155, 127, 182);
+  transition: 0.2s;
+}
+#front-car:hover {
+  background-color: rgb(179, 118, 236);
+}
+#back-car:hover {
+  background-color: rgb(179, 118, 236);
+}
+#add-car:hover {
+  background-color: rgb(179, 118, 236);
+}
+#sec4-ul {
+  margin-top: 20px;
+}
+#sec4-ul li {
+  color: gray;
+}
+#sec4-ul-2 {
+  margin-top: 20px;
+}
+#sec4-ul-2 li {
+  color: gray;
+}
+#sec5 h5 {
+  padding: 15px;
+}
+#p1 {
+  color: gray;
+}
+.btn {
+  width: 100%;
+}
+.p2 {
+  margin-top: 20px;
+  color: gray;
+  padding-bottom: 40px;
+}
+#sec5-input-name {
+  border: 1px solid lightgray;
+}
+#sec2-input-email {
+  border: 1px solid lightgray;
+}
+#sec2-input-phone {
+  border: 1px solid lightgray;
+}
+#sec5 {
+  border-bottom: 4px solid #c71b25;
+}
+.footer {
+  background-color: #444;
+}
+#agreement {
+  color: white;
+  padding-right: 100px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.qaydalar {
+  color: white;
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.qanun:hover {
+  color: white;
+}
+.qaydalar:hover {
+  color: white;
+}
+.mexfilik:hover {
+  color: white;
+}
+.qanun {
+  color: white;
+  margin-right: 100px;
+}
+.footer .col-3 {
+  margin-top: 20px;
+}
+.footer .col-6 {
+  margin-top: 20px;
+}
+.footer .col-6 p {
+  color: #979797;
+}
+.mexfilik {
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#pf1 {
+  color: white;
+}
+#pf2 {
+  color: white;
+}
+.turbomail {
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+.turbomail:hover {
+  color: white;
+}
+.mobile {
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  padding-bottom: 100px;
+}
+.mobile:hover {
+  color: white;
+}
+#sec2-input-horsepower {
+  border: 1px solid lightgray !important;
 }
