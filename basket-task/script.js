@@ -59,23 +59,23 @@ function createrow() {
     let newtd6 = document.createElement("td")
     let td6btn = document.createElement("button")
     td6btn.setAttribute("class","btn btn-danger")
-    td6btn.setAttribute("onclick","deleterow()")
     td6btn.innerHTML = "Delete";
     newtd6.appendChild(td6btn);
+    td6btn.addEventListener("click",function (e){
+      let table = document.querySelector(".table")
+      console.log(table);
+      tbody.deleteRow(this)
+
+    })
     let newtr = document.createElement("tr");
     newtr.appendChild(newtd1)
     newtr.appendChild(newtd2)
     newtr.appendChild(newtd3)
     newtr.appendChild(newtd4)
     newtr.appendChild(newtd5)
-    newtr.appendChild(newtd6)
+    newtr.appendChild(newtd6)     
     tbody.appendChild(newtr)
   })
 }
 createrow();
 
-function deleterow(){
-    let table = document.querySelector(".table")
-    console.log(this.parentElement)
-    table.remove(this.parentElement)
-}
