@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/6440776.jpg);
+    background-repeat: no-repeat cover;     
+}
+h1{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    
+}
+.content{
+    margin-top: 150px;
+}
