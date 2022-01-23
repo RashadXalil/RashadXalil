@@ -1,0 +1,895 @@
+:root{
+    --main-color: #00AF00;
+    --main-color-less: #025202;
+    --main-color-shadow: #00af002f;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+}
+
+/*Scrollbar styles*/
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--main-color-less);
+}
+
+
+
+/*COMMON STYLES FOR THEME*/
+h1{
+    font-size: calc(2vw + 30px);
+}
+
+h2{
+    font-size: calc(2vw + 18px);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0;
+}
+
+h4{
+    font-size: calc(0.5vw + 12px);
+    font-weight: 500;
+    opacity: 0.7;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.shapeBackground{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: auto;
+    width: 10%;
+    z-index: 1;
+    transform: scaleX(-1);
+    min-width: 200px;
+}
+
+.shapeBackground2{
+    position: absolute;
+    right: -2px;
+    bottom: 0;
+    height: auto;
+    width: 10%;
+    z-index: 1;
+    min-width: 200px;
+}
+
+
+
+.backgroundContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(20deg, #000000fa, #1d1d1dfa);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.backgroundImage{
+    height: auto;
+    max-width: 2000px;
+    min-width: 1780px;
+    transform: rotate(-10deg) translate(30%, -45%);
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 0.01;
+}
+
+
+.headerSection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    transition: all 0.5s;
+}
+
+.logoContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 80%;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.menuContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuItem{
+    margin-right: 2rem;
+}
+
+.menuItemLink{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menuItem:last-child{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 12px var(--main-color-shadow);
+}
+
+.hamburguerMenu{
+    display: none;
+    height: 34%;
+    width: 40px;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.line{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.line:first-child{
+    top: 0;
+}
+
+.line:last-child{
+    top: auto;
+    bottom: 0;
+}
+
+
+/*HERO SECTION*/
+.heroSection{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.backgroundVideo{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.leftSide{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.heroTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainTextHero{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 0 0 12px black;
+}
+
+.secondTextHero{
+    font-size: calc(0.5vw + 15px);
+    font-weight: 500;
+    color: white;
+    text-shadow: 0 0 12px black;
+    margin-top: 0;
+    text-transform: none;
+    margin-bottom: 1rem;
+}
+
+.buttonHero{
+    color: white;
+    background-color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 12px var(--main-color-shadow);
+    transition: all 0.5s;
+}
+
+.buttonHero:hover{
+    box-shadow: 0 0 18px var(--main-color-shadow);
+}
+
+
+/*TEAMS SECTION*/
+.teamsSection{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.teamsSectionContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamsContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.teamContainer{
+    width: 33%;
+    height: 300px;
+    position: relative;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.teamContainer:last-child{
+    margin-right: 0;
+}
+
+.teamBackgroundImage{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    filter: grayscale(1) brightness(0.4);
+    transition: all 0.5s;
+    height: 500px;
+}
+
+.teamContainer:hover .teamBackgroundImage{
+    transform: scale(1.1);
+    filter: none;
+}
+
+.gameLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+    filter: drop-shadow(0 0 9px black);
+}
+
+
+
+/*MATCHES SECTION*/
+.matchesSection{
+    width: 100%;
+    margin-top: 15rem;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.matchesSectionContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.matchesContainer{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.matchContainer{
+    width: 33%;
+    height: 40vw;
+    max-height: 650px;
+    margin-right: 5rem;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    /*Background Properties*/
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    transition: all 0.5s;
+}
+
+.matchContainer:last-child{
+    margin-right: 0;
+}
+
+.matchContainer:hover{
+    border-color: var(--main-color);
+    box-shadow: 0 0 35px 1px var(--main-color-shadow);
+}
+
+.gameLogoContainer{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matchGameLogo{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.teamsMatchContainer{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftTeam{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftTeamLogo{
+    height: 60%;
+    background:transparent;
+    object-fit: contain;
+}
+
+.rightTeam{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightTeamLogo{
+    height: 60%;
+    object-fit: contain;
+}
+
+.teamName{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-size: calc(0.5vw + 14px);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+.matchInfoContainer{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.matchDate{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.matchTime{
+    font-size: calc(0.5vw + 18px);
+    color: white;
+    font-weight: 800;
+}
+
+.viewMatchLink{
+    background-color: var(--main-color-less);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.viewMatchLink:hover{
+    box-shadow: 0 0 25px 1px var(--main-color-shadow);
+}
+
+
+/*NEWS SECTION*/
+.newsSection{
+    width: 100%;
+    height: auto;
+    margin-top: 15rem;
+    position: relative;
+    z-index: 2;
+}
+
+.newsSectionContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.newContainer{
+    width: 33%;
+    height: 45vw;
+    margin-right: 5rem;
+    max-height: 700px;
+    border-radius: 20px;
+    position: relative;
+
+    /*BAckground properties*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newContainer:last-child{
+    margin-right: 0;
+}
+
+.newContainer:hover .viewMoreContainer{
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.newContainer:hover .viewMoreNewsButton{
+    z-index: 1;
+    opacity: 1;
+}
+
+.newContainer:hover .newInfoContainer{
+    filter: brightness(0.3);
+}
+
+
+.viewMoreContainer{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background-color: black;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+.viewMoreNewsButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 100px;
+    width: 30%;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.viewMoreNewsButton:hover{
+    color: #121212;
+    background-color: white;
+    
+}
+
+.newInfoContainer{
+    width: 60%;
+    margin-left: 5%;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 5%;
+    transition: all 0.5s;
+}
+
+.newTitle{
+    font-size: calc(0.5vw + 18px);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.newDescription{
+    font-weight: 500;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.newDate{
+    font-size: calc(0.5vw + 8px);
+}
+
+
+
+/*CONTACT SECTION*/
+.contactSection{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    margin-top: 15rem;
+    position: relative;
+}
+
+.contactSectionContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.firstLineForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+.inputContainer:nth-of-type(2){
+    margin-right: 0;
+}
+
+.inputLabel{
+    color: white;
+    font-weight: 600;
+    font-size: calc(0.5vw + 10px);
+}
+
+.nameInput{
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: #4b4b4b21;
+    outline: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.inputLine{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.inputLine2{
+    background-color: var(--main-color);
+    height: 3px;
+    z-index: 2;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s linear;
+}
+
+.nameInput:focus ~ .inputLine2{
+    width: 100%;
+}
+
+.textArea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #4b4b4b21;
+    outline: none;
+    resize: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.textArea:focus ~ .inputLine2{
+    width: 100%;
+}
+
+.sendButton{
+    padding: 10px 30px;
+    border-radius: 20px;
+    outline: none;
+    background-color: var(--main-color-less);
+    border-color: transparent;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: all 0.5s;
+}
+
+.sendButton:hover{
+    background-color: var(--main-color);
+    color: #121212;
+}
+
+
+
+
+
+@media (max-width: 1000px){
+    .hamburguerMenu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuItem{
+        display: none;
+    }
+
+    .menuItem:last-child{
+        transform: scale(0.8);
+        display: block;
+        margin-right: 1rem;
+    }
+
+    /*TEAMS*/
+    .teamsSectionContainer{
+        width: 80%;
+    }
+
+    .teamsContainer{
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .teamContainer{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .teamContainer:last-child{
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+
+
+    /*MATCHES SECTION*/
+    .matchesSection{
+        margin-top: 5rem;
+    }
+
+    .matchesSectionContainer{
+        width: 80%;
+    }
+
+    .matchesContainer{
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .matchContainer{
+        width: 100%;
+        height: 100px;
+        margin-right: 0;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+    }
+
+    .gameLogoContainer{
+        height: 100%;
+        width: 25%;
+    }
+
+    .matchGameLogo{
+        height: 70%;
+        width: auto;
+    }
+
+    .teamsContainer{
+        width: 100%;
+    }
+
+    .teamName{
+        font-size: 11px;
+        margin-top: 0.3rem;
+    }
+
+    .leftTeam{
+        height: 100%;
+    }
+
+    .rightTeam{
+        height: 100%;
+    }
+
+    .leftTeamLogo{
+        height: 50%;
+    }
+
+    .rightTeamLogo{
+        height: 50%;
+    }
+
+    .matchInfoContainer{
+        height: 100%;
+        width: 25%;
+    }
+
+    .matchDate{
+        font-size: 10px;
+    }
+
+    .matchTime{
+        font-size: 16px;
+    }
+
+    .viewMatchLink{
+        margin-top: 0;
+        transform: scale(0.5);
+    }
+
+
+    /*NEWS SECTION*/
+    .newsSection{
+        margin-top: 5rem;
+    }
+
+    .newsSectionContainer{
+        width: 80%;
+    }
+
+    .newsContainer{
+        flex-direction: column;
+    }
+
+    .newContainer{
+        width: 100%;
+        height: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+    }
+
+
+    /*CONTACT SECTION*/
+    .contactSection{
+        margin-top: 5rem;
+    }
+
+    .contactSectionContainer{
+        width: 80%;
+    }
+
+    .contactContentContainer{
+        margin-top: 1.5rem;
+    }
+
+    .sendButton{
+        margin-top: 1.5rem;
+        width: 50%;
+        height: 40px;
+    }
+
+
+
+
+}
