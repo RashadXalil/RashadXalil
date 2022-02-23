@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bg.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -111,4 +111,7 @@ form{
 
 .button-second:hover{
     opacity: 1;
+}
+.title{
+    padding-top: 20px;
 }
